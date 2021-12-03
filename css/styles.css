@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    
+    /* ## Colors */
+
+    /* ### Primary */
+
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+
+    /* ### Neutral */
+    --Transparent-white-paragraphs: hsla(0, 0%, 100%, 0.75);
+    --Very-light-gray-background-headings-buttons: hsl(0, 0%, 95%);
+
+    --Font-size: 0.9375rem;
+    --ff-lexend-deca: "Lexend Deca";
+    --fw-400: 400;
+    
+    --ff-big-shoulders-display: "Big Shoulders Display";
+    --fw-400: 700;
+
+}
+
+/* Attribution */
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
