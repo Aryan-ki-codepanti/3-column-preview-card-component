@@ -27,7 +27,30 @@
 
 }
 
+body{
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+
+
+.wrapper{
+    width: 70%;
+    margin: auto;
+    max-width: 1100px;
+}
+
 /* Attribution */
+
+footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0.4em;
+}
+
 .attribution {
     font-size: 11px;
     text-align: center;
