@@ -1,11 +1,10 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-:root{
-    
+:root {
     /* ## Colors */
 
     /* ### Primary */
@@ -18,32 +17,103 @@
     --Transparent-white-paragraphs: hsla(0, 0%, 100%, 0.75);
     --Very-light-gray-background-headings-buttons: hsl(0, 0%, 95%);
 
-    --Font-size: 0.9375rem;
+    --Font-size: 0.9rem;
     --ff-lexend-deca: "Lexend Deca";
     --fw-400: 400;
-    
+
     --ff-big-shoulders-display: "Big Shoulders Display";
     --fw-400: 700;
-
 }
 
-body{
+body {
     min-height: 100vh;
     display: grid;
     place-items: center;
 }
 
-
-
-.wrapper{
+/* Wrapper  */
+.wrapper {
     width: 70%;
     margin: auto;
     max-width: 1100px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border-radius: 20px;
+}
+
+/* Backgrounds */
+.sedans{
+    background: var(--Bright-orange);
+    border-radius: 5px 0 0 5px;
+}
+
+.suvs{
+    background: var(--Dark-cyan);
+}
+.luxury{
+    background: var(--Very-dark-cyan);
+    border-radius: 0 5px 5px 0;
+}
+
+/* Card */
+.card{
+    padding: 2.25em 2.5em;
+    min-height: 450px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-footer{
+    margin-top: auto;
+}
+.card img{
+    width: 40px;
+}
+.card h1{
+    color: var(--Very-light-gray-background-headings-buttons);
+    text-transform: uppercase;
+    font-family: var(--ff-big-shoulders-display);
+    margin-block: 0.7em;
+    font-size: 2.5rem;
+}
+
+.card p{
+    font-family: var(--ff-lexend-deca);
+    font-size: var(--Font-size);
+    color: var(--Transparent-white-paragraphs);
+    line-height: 1.6;
+}
+
+.card button{
+    background-color: var(--Very-light-gray-background-headings-buttons);
+    font-size: var(--Font-size);
+    font-family: var(--ff-lexend-deca);
+    padding: 0.9em 1.5em;
+    border-radius: 2rem;
+    cursor: pointer;
+    border: none;
+}
+
+.card button:hover{
+    color: var(--Very-light-gray-background-headings-buttons);
+    background: transparent;
+    border: 2.2px solid var(--Very-light-gray-background-headings-buttons);
+}
+
+.sedans button{
+    color: var(--Bright-orange);
+}
+.suvs button{
+    color: var(--Dark-cyan);
+}
+.luxury button{
+    color: var(--Very-dark-cyan);
 }
 
 /* Attribution */
 
-footer{
+footer {
     position: absolute;
     bottom: 0;
     left: 0;
