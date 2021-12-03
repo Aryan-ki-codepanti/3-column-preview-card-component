@@ -128,3 +128,30 @@ footer {
 .attribution a {
     color: hsl(228, 45%, 44%);
 }
+
+
+/* Responsive media designs */
+@media screen and (max-width: 468px) {
+    .wrapper{
+        grid-template-columns: 1fr;
+        padding-block: 2em;
+    }
+
+    .sedans{
+        background: var(--Bright-orange);
+        border-radius: 5px 5px 0 0;
+    }
+    .luxury{
+        background: var(--Very-dark-cyan);
+        border-radius: 0 0 5px 5px;
+    }
+
+    footer{
+        position: static;
+    }
+
+    .card{
+        min-height: 370px;
+    }
+    
+}
